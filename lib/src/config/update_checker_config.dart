@@ -1,4 +1,7 @@
 class UpdateCheckerConfig {
+  final bool enableIos;
+  final bool enableAndroid;
+
   final bool enableAppStoreUpdateChecker;
   final bool enableShorebirdUpdateChecker;
 
@@ -6,10 +9,12 @@ class UpdateCheckerConfig {
   final bool forceShorebirdUpdate;
 
   final String? androidAppId;
-  final String iOSAppId;
+  final String? iOSAppId;
 
   const UpdateCheckerConfig({
-    required this.iOSAppId,
+    this.enableIos = true,
+    this.enableAndroid = true,
+    this.iOSAppId,
     this.androidAppId,
     this.enableAppStoreUpdateChecker = true,
     this.enableShorebirdUpdateChecker = true,

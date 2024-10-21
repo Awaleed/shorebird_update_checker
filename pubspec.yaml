@@ -1,6 +1,6 @@
 name: shorebird_update_checker
 description: "A Flutter package to check for updates and prompt users to update the app."
-version: 0.0.7
+version: 0.0.8
 homepage: https://github.com/Awaleed/shorebird_update_checker
 
 environment:
@@ -10,15 +10,13 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-  restart_app: ^1.2.1
-  shared_preferences: ^2.2.2
-  shorebird_code_push: ^1.1.3
-  store_redirect: ^2.0.1
-  upgrader: ^8.4.0
+  restart_app: ^1.3.2
+  shared_preferences: ^2.3.2
+  shorebird_code_push: ^1.1.6
+  store_redirect: ^2.0.3
+  upgrader: ^11.3.0
 
 dev_dependencies:
   flutter_lints: ^2.0.0
   flutter_test:
     sdk: flutter
-
-flutter: null

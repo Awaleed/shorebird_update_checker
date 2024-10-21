@@ -1,6 +1,11 @@
+## 0.0.8
+
+* Refactor UpdateCheckerConfig and ShorebirdUpdateChecker classes
+* update dependencies in pubspec.yaml
+
 ## 0.0.7
 
-* Add hasUpdateFailed to UpdateChecker to enable slientUpdate in the background in case of error
+* Add hasUpdateFailed to UpdateChecker to enable silentUpdate in the background in case of error
 
 ## 0.0.6
 

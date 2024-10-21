@@ -12,8 +12,9 @@ class ShorebirdUpdateChecker extends UpdateChecker {
   Future checkForUpdates() async {
     final SharedPreferences prefs = await SharedPreferences.getInstance();
     hasUpdateFailed = prefs.getBool(UpdateChecker.hasUpdateFailedKey) ?? false;
+
     if (hasUpdateFailed) {
-      return slientUpdate();
+      return silentUpdate();
     }
 
     try {
@@ -47,8 +48,8 @@ class ShorebirdUpdateChecker extends UpdateChecker {
     }
   }
 
-  // slientUpdate
-  Future slientUpdate() async {
+  // silentUpdate
+  Future silentUpdate() async {
     try {
       final mHasUpdates =
           await shorebirdCodePush.isNewPatchAvailableForDownload();
